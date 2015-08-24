@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>jquerycrudapp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+</head>
+<body background="http://orig11.deviantart.net/0dfe/f/2009/078/1/1/retro_texture_by_wingsofahero.jpg">
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 nopadding">
+                <div id="nav">
+                    <div id="navtext">
+                        Super Hereos!
+                        <span style="font-size:30px" id="hidenav">The internet's complete source of Super heroes.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 inputBox">
+             <p class="formtext">Name:</p>
+             	<input class="form-control" type="text" maxlength="20" id="name" /> 
+             
+             <p class="formtext">Appears in:</p>
+             	<input class="form-control"type="text" maxlength="30" id="appears" /> 
+             <p class="formtext">Image:</p>
+             	<input class="form-control"  type="text" id="img" />
+
+             	<button class="btn btn-success pull-right" onclick="create()" id="button">Add character</button>
+             	<div id="editbutton"></div>
+             </div>
+                <div class="col-md-9  nopadding">
+                <div id="update"> <span class="formtext"> Edit Hero:</span>
+                <input  type="text" maxlength="20" id="editName" /> 
+                <input type="text" maxlength="30" id="editAppears" /> 
+                <input  type="text" id="editImg" />
+                <button class="btn btn-success" id="subEdit">Submit Edit</button>
+                </div>
+                <div id="hereos">
+                
+                </div>
+                    
+    		</div>
+    	</div>
+      </div>
+    </div>
+		
+	</div>
+    <script src="jquery/dist/jquery.js"></script>
+	<script src="/javascript/app.js"></script>
+</body>
+</html>
